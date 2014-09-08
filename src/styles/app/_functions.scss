@@ -1,0 +1,66 @@
+@import 'reset';
+@import 'settings';
+
+@mixin main-heading{
+  font-family: $primary-heading-font;
+  font-size: $primary-heading-size;
+  color: $primary-heading-color;
+  line-height: $primary-heading-lineHeight;
+  margin-bottom: $primary-heading-marginBottom;
+}
+
+@mixin secondary-heading{
+  font-family: $secondary-heading-font;
+  font-size: $secondary-heading-size;
+  color: $secondary-heading-color;
+  line-height:$secondary-heading-lineHeight ;
+  margin-bottom:$secondary-heading-marginBottom;
+}
+
+@mixin sub-heading{
+  font-family: $sub-heading-font;
+  font-size: $sub-heading-size;
+  color: $sub-heading-color;
+  line-height: $sub-heading-lineHeight;
+  margin-bottom: $sub-heading-marginBottom ;
+}
+
+@mixin section-color($brand-color){
+  background-color: $brand-color;
+}
+
+@mixin btn{
+  display: inline-block;
+  vertical-align:bottom;
+  text-align:center;
+  zoom:1;
+  text-transform: $text-transform;
+}
+
+@mixin btn-styles{
+  border-radius: $btn-radius;
+  border: $btn-border;
+  font-family:$btn-font;
+}
+
+@mixin btn-large{
+  @include btn;
+  @include btn-styles;
+  height: $btn-height-large;
+  width: $btn-width-large;
+  padding: $btn-padding-large;
+}
+
+@mixin btn-medium{
+  @include btn;
+  @include btn-styles;
+  height: $btn-height-medium;
+  width:$btn-width-medium;
+}
+
+@mixin btn-small{
+  @include btn;
+  @include btn-styles;
+  height: $btn-height-small;
+  width:$btn-width-small;
+}

@@ -1,0 +1,15 @@
+/*==================================
+1. Variables / Settings 
+2. Layout / Grid 
+3. Typography
+4. Components 
+5. Pages 
+===================================*/
+@import 'app/functions.scss';
+
+h1{ @include main-heading;}
+
+.hero{background-color: grey;}
+.btn{
+  @include btn-large;
+}

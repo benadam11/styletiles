@@ -1,0 +1,54 @@
+//Fonts
+$brand-font-1:"proxima-nova",sans-serif;
+$brand-font-2:"adelle",serif;
+
+//Color Pallete
+$brandPallete1:#D8D8D8;
+$brandPallete2: #4A90E2;
+$brandPallete3: #417505;
+$brandPallete4: #7ED321;
+$brandPallete5: #F8E71C;
+
+//Primary Heading 
+
+$primary-heading-font: $brand-font-1; 
+$primary-heading-size: 2em;
+$primary-heading-color: $brandPallete1;
+$primary-heading-lineHeight: 1.5em;
+$primary-heading-marginBottom: 1em;
+/*
+//Secondary Heading 
+$secondary-heading-font: ; 
+$secondary-heading-size: ;
+$secondary-heading-color: ;
+$secondary-heading-lineHeight: ;
+$secondary-heading-marginBottom: ;
+
+//Sub Heading 
+$sub-heading-font: ; 
+$sub-heading-size: ;
+$sub-heading-color: ;
+$sub-heading-lineHeight: ;
+$sub-heading-marginBottom: ;
+*/
+
+
+
+//Buttons
+$btn-font:$brand-font-1;
+$text-transform:none;
+$btn-border: 1px solid $brandPallete1;
+$btn-radius:none;
+
+//Large
+$btn-height-large:auto;
+$btn-width-large:100%;
+$btn-padding-large:1em;
+/*
+//Medium
+$btn-height-medium:;
+$btn-width-medium:;
+//Small
+$btn-height-small:;
+$btn-width-small:;
+*/
