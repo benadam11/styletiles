@@ -9,7 +9,7 @@
 
 h1{ @include main-heading;}
 
-.hero{background-color: grey;}
+.hero{}
 .btn{
   @include btn-large;
 }
