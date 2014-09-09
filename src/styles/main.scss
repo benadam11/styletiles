@@ -12,27 +12,42 @@
   max-width: 60rem;
   width: 90%;
 }
-
+img{
+  height:100%;
+  width:auto;
+}
 h1 { @include main-heading; }
 h2{ @include secondary-heading; }
 p { @include body-font; }
 h2.sub-head { @include sub-heading; }
 
 //Sections 
-header{padding:2em;}
-.hero, 
-.styles{
-  padding:2em;
-  margin-bottom: 1em;
+header{padding:3em;}
+
+.hero{ 
+  background: $brandPallete6;
+  padding:3em 2em 4em;
 }
-.hero{ background: $brandPallete6;}
+.styles,{ 
+  padding:4em 2em 4em;
+}
 .patterns{ 
   background: $brandPallete1;
   min-height: 12em;
 }
+.section-header{
+  background-color: $brandPallete7;
+  padding:1.25em .5em .0125em;
+}
+.components{
+  background-color: $brandPallete6;
+  padding:3em 2em 3em;
+}
 
 
 //Components
+
+//Color Pallete 
 .brand-color{
   display: inline-block;
   width:18%;
@@ -49,4 +64,39 @@ header{padding:2em;}
 .brand-color-4{background:$brandPallete4}
 .brand-color-5{background:$brandPallete5}
 
-.btn{ @include btn-large;}
+.btn-lg{ 
+  @include btn-large;
+  &:hover{
+    background-color: $btn-hover-color;
+  }
+}
+
+.btn-md{ 
+  @include btn-medium;
+  &:hover{
+    background-color: $btn-hover-color;
+  }
+}
+.btn-sm{ 
+  @include btn-small;
+  &:hover{
+    background-color: $btn-hover-color;
+  }
+}
+form{
+  margin-bottom: 1em;
+}
+label{
+  display:block;
+  margin-bottom:1em;
+  @include secondary-heading;
+}
+input[type=text]{
+  @include input;
+  margin-bottom:1em;
+
+  &:focus{
+    @include input-focus;
+  }
+}
+

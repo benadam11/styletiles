@@ -8,18 +8,22 @@ $brandPallete2: #E74F2A;
 $brandPallete3: #A0A0A0;
 $brandPallete4: #2496DD;
 $brandPallete5: #EAB843;
+
+/*Background Colors*/
 $brandPallete6: #F3F3F3;
+$brandPallete7:#D1D1D1;
 
 
 //Primary Heading 
 
 $primary-heading-font: $brand-font-1; 
-$primary-heading-size: 3em;
+$primary-heading-size: 2.5em;
 $primary-heading-color: $brandPallete1;
 $primary-heading-lineHeight: 1.5em;
-$primary-heading-marginBottom: 1em;
+$primary-heading-marginBottom: .5em;
 $primary-heading-fontStyle:normal;
 $primary-heading-fontWeight:600;
+$primary-heading-text-transform:none;
 
 //Secondary Heading 
 $secondary-heading-font: $brand-font-1; 
@@ -29,15 +33,17 @@ $secondary-heading-lineHeight: 1.25em;
 $secondary-heading-marginBottom: 1em;
 $secondary-heading-fontStyle:normal;
 $secondary-heading-fontWeight:400;
+$secondary-heading-text-transform:uppercase;
 
 //Sub Heading 
 $sub-heading-font: $brand-font-1; 
 $sub-heading-size: 1.5em;
 $sub-heading-color:$brandPallete2 ;
 $sub-heading-lineHeight: 1.25;
-$sub-heading-marginBottom:2em ;
+$sub-heading-marginBottom:0 ;
 $sub-heading-fontStyle:italic;
 $sub-heading-fontWeight:600;
+$sub-heading-text-transform:none;
 
 //Paragraph
 $body-font:$brand-font-1 ; 
@@ -47,6 +53,7 @@ $body-lineHeight: 1.5;
 $body-marginBottom:2em ;
 $body-fontStyle:normal;
 $body-fontWeight:400;
+$body-text-transform:none;
 
 
 
@@ -54,19 +61,41 @@ $body-fontWeight:400;
 $btn-color:$brandPallete4;
 $btn-txt-color:white;
 $btn-font:$brand-font-1;
-$text-transform:none;
+$btn-text-transform:uppercase;
 $btn-border: none;
 $btn-radius:6px;
+$btn-hover-color:#2180BB;
+$btn-padding:1em;
 
-//Large
+/*Large*/
 $btn-height-large:auto;
-$btn-width-large:200px;
+$btn-width-large:300px;
 $btn-padding-large:1em;
-/*
-//Medium
-$btn-height-medium:;
-$btn-width-medium:;
-//Small
-$btn-height-small:;
-$btn-width-small:;
-*/
+/*Medium*/
+$btn-height-medium:auto;
+$btn-width-medium:200px;
+/*Small*/
+$btn-height-small:auto;
+$btn-width-small:100px;
+
+
+//Form 
+$input-color:$brandPallete6;
+$input-txt-color:default;
+$input-font:$brand-font-1;
+$input-text-transform:none;
+$input-border: 2px solid $brandPallete4;
+$input-radius:6px;
+$input-padding:.75em;
+$input-width:400px;
+$input-height:auto;
+
+/*Focus Styles*/
+$input-focus-color:$brandPallete6;
+$input-focus-txt-color:default;
+$input-focus-font:$brand-font-1;
+$input-focus-text-transform:none;
+$input-focus-border: 2px solid $brandPallete4;
+$input-focus-radius:6px;
+$input-focus-padding:.75em;
+

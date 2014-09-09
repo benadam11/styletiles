@@ -47,15 +47,17 @@
   vertical-align:bottom;
   text-align:center;
   zoom:1;
-  text-transform: $text-transform;
 }
 
 @mixin btn-styles{
+
   background-color:$btn-color;
-  color:$btn-txt-color;
-  border-radius: $btn-radius;
   border: $btn-border;
+  border-radius: $btn-radius;
+  color:$btn-txt-color;
   font-family:$btn-font;
+  text-transform: $btn-text-transform;
+  padding:$btn-padding;
 }
 
 @mixin btn-large{
@@ -79,3 +81,28 @@
   height: $btn-height-small;
   width:$btn-width-small;
 }
+
+@mixin input{
+  -webkit-appearance: none;
+  background-color:$input-color;
+  color:$input-txt-color;
+  border-radius: $input-radius;
+  border: $input-border;
+  font-family:$input-font;
+  padding:$input-padding;
+  text-transform: $input-text-transform;
+  width: $input-width;
+  height:$input-height;
+}
+
+@mixin input-focus{
+  -webkit-appearance: none;
+  background-color:$input-focus-color;
+  color:$input-focus-txt-color;
+  border-radius: $input-focus-radius;
+  border: $input-focus-border;
+  font-family:$input-focus-font;
+  padding:$input-focus-padding;
+  text-transform: $input-focus-text-transform;
+}
+
