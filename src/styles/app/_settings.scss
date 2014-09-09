@@ -14,7 +14,7 @@ $brandPallete6: #F3F3F3;
 //Primary Heading 
 
 $primary-heading-font: $brand-font-1; 
-$primary-heading-size: 2em;
+$primary-heading-size: 3em;
 $primary-heading-color: $brandPallete1;
 $primary-heading-lineHeight: 1.5em;
 $primary-heading-marginBottom: 1em;
@@ -31,20 +31,20 @@ $secondary-heading-fontStyle:normal;
 $secondary-heading-fontWeight:400;
 
 //Sub Heading 
-$sub-heading-font:$brand-font-1 ; 
-$sub-heading-size: 1.25em;
+$sub-heading-font: $brand-font-1; 
+$sub-heading-size: 1.5em;
 $sub-heading-color:$brandPallete2 ;
 $sub-heading-lineHeight: 1.25;
-$sub-heading-marginBottom:1em ;
+$sub-heading-marginBottom:2em ;
 $sub-heading-fontStyle:italic;
 $sub-heading-fontWeight:600;
 
 //Paragraph
 $body-font:$brand-font-1 ; 
-$body-size: 1em;
+$body-size: 1.25em;
 $body-color:default ;
-$body-lineHeight: 1.25;
-$body-marginBottom:1em ;
+$body-lineHeight: 1.5;
+$body-marginBottom:2em ;
 $body-fontStyle:normal;
 $body-fontWeight:400;
 

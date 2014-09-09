@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
-    notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     del = require('del');
 
@@ -30,8 +29,7 @@ gulp.task('styles', function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(minifycss())
     .pipe(gulp.dest('app/styles'))
-    .pipe(reload({stream:true}))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(reload({stream:true}));
 });
  
 // Scripts
@@ -42,17 +40,15 @@ gulp.task('scripts', function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(uglify())
     .pipe(gulp.dest('app/scripts'))
-    .pipe(reload({stream:true}))
-    .pipe(notify({ message: 'Scripts task complete' }));
+    .pipe(reload({stream:true}));
 });
  
 // Images
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
+  return gulp.src('src/images/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(gulp.dest('app/images'))
-    .pipe(reload({stream:true}))
-    .pipe(notify({ message: 'Images task complete' }));
+    .pipe(reload({stream:true}));
 });
  
 // Clean

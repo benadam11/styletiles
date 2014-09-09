@@ -7,16 +7,46 @@
 ===================================*/
 @import 'app/functions.scss';
 
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  width: 90%;
+}
+
 h1 { @include main-heading; }
 h2{ @include secondary-heading; }
 p { @include body-font; }
 h2.sub-head { @include sub-heading; }
 
-.hero{
-  background: $brandPallete6;
+//Sections 
+header{padding:2em;}
+.hero, 
+.styles{
   padding:2em;
+  margin-bottom: 1em;
+}
+.hero{ background: $brandPallete6;}
+.patterns{ 
+  background: $brandPallete1;
+  min-height: 12em;
+}
+
+
+//Components
+.brand-color{
+  display: inline-block;
+  width:18%;
+  height:50px;
+  margin-right:.5%;
   margin-bottom: 2em;
 }
-.btn{
-  @include btn-large;
+.brand-color:last-child{
+  margin-right: none;
 }
+.brand-color-1{background:$brandPallete1}
+.brand-color-2{background:$brandPallete2}
+.brand-color-3{background:$brandPallete3}
+.brand-color-4{background:$brandPallete4}
+.brand-color-5{background:$brandPallete5}
+
+.btn{ @include btn-large;}
