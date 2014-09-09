@@ -7,9 +7,16 @@
 ===================================*/
 @import 'app/functions.scss';
 
-h1{ @include main-heading;}
+h1 { @include main-heading; }
+h2{ @include secondary-heading; }
+p { @include body-font; }
+h2.sub-head { @include sub-heading; }
 
-.hero{}
+.hero{
+  background: $brandPallete6;
+  padding:2em;
+  margin-bottom: 2em;
+}
 .btn{
   @include btn-large;
 }

@@ -7,6 +7,7 @@
   color: $primary-heading-color;
   line-height: $primary-heading-lineHeight;
   margin-bottom: $primary-heading-marginBottom;
+  font-style: $primary-heading-fontStyle;
 }
 
 @mixin secondary-heading{
@@ -15,6 +16,7 @@
   color: $secondary-heading-color;
   line-height:$secondary-heading-lineHeight ;
   margin-bottom:$secondary-heading-marginBottom;
+  font-style: $secondary-heading-fontStyle;
 }
 
 @mixin sub-heading{
@@ -23,6 +25,17 @@
   color: $sub-heading-color;
   line-height: $sub-heading-lineHeight;
   margin-bottom: $sub-heading-marginBottom ;
+  font-weight: $sub-heading-fontWeight;
+  font-style: $sub-heading-fontStyle;
+}
+@mixin body-font{
+  font-family: $body-font;
+  font-size: $body-size;
+  color: $body-color;
+  line-height: $body-lineHeight;
+  margin-bottom: $body-marginBottom ;
+  font-weight: $body-fontWeight;
+  font-style: $body-fontStyle;
 }
 
 @mixin section-color($brand-color){
@@ -38,6 +51,8 @@
 }
 
 @mixin btn-styles{
+  background-color:$btn-color;
+  color:$btn-txt-color;
   border-radius: $btn-radius;
   border: $btn-border;
   font-family:$btn-font;
