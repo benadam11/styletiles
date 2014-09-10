@@ -7,11 +7,7 @@
 ===================================*/
 @import 'app/functions.scss';
 
-.container {
-  margin: 0 auto;
-  max-width: 70em;
-  width: 90%;
-}
+
 
 //Elements
 
@@ -24,6 +20,27 @@ h1 { @include main-heading; }
 h2{ @include secondary-heading; }
 p { @include body-font; }
 h2.sub-head { @include sub-heading; }
+
+//Layout
+.container {
+  margin: 0 auto;
+  max-width: 70em;
+  width: 90%;
+}
+.third{
+  display: inline-block;
+  width:31.3%;
+  height:auto;
+  text-align: center;
+
+  img{
+    display: inline-block;
+    max-height: 100px;
+  }
+}
+.center{
+  text-align: center;
+}
 
 //Sections 
 header{padding:3em;}
@@ -39,7 +56,7 @@ header{padding:3em;}
 
 .patterns{ 
   background: $brandPallete1;
-  min-height: 12em;
+  padding:4em 1em 4em;
 }
 
 .section-header{

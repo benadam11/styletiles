@@ -218,12 +218,6 @@ h1, h2, h3, h4, h5, h6 {
 /*Medium*/
 /*Small*/
 /*Focus Styles*/
-.container {
-  margin: 0 auto;
-  max-width: 70em;
-  width: 90%;
-}
-
 img {
   height: 100%;
   width: auto;
@@ -267,6 +261,27 @@ h2.sub-head {
   margin-bottom: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 70em;
+  width: 90%;
+}
+
+.third {
+  display: inline-block;
+  width: 31.3%;
+  height: auto;
+  text-align: center;
+}
+.third img {
+  display: inline-block;
+  max-height: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
 header {
   padding: 3em;
 }
@@ -282,7 +297,7 @@ header {
 
 .patterns {
   background: #132B44;
-  min-height: 12em;
+  padding: 4em 1em 4em;
 }
 
 .section-header {
