@@ -9,53 +9,52 @@ $brandPallete3: #A0A0A0;
 $brandPallete4: #2496DD;
 $brandPallete5: #EAB843;
 
-/*Background Colors*/
+//Background Colors
+/*BG-1*/
 $brandPallete6: #F3F3F3;
+/*BG-2*/
 $brandPallete7:#D1D1D1;
 
 
 //Primary Heading 
-
-$primary-heading-font: $brand-font-1; 
-$primary-heading-size: 2.5em;
 $primary-heading-color: $brandPallete1;
-$primary-heading-lineHeight: 1.5em;
-$primary-heading-marginBottom: .5em;
+$primary-heading-font: $brand-font-1; 
 $primary-heading-fontStyle:normal;
 $primary-heading-fontWeight:600;
+$primary-heading-lineHeight: 1.5em;
+$primary-heading-marginBottom: .5em;
+$primary-heading-size: 2.5em;
 $primary-heading-text-transform:none;
 
 //Secondary Heading 
+$secondary-heading-color:$brandPallete1;
 $secondary-heading-font: $brand-font-1; 
 $secondary-heading-size: 1.5em;
-$secondary-heading-color:$brandPallete1;
-$secondary-heading-lineHeight: 1.25em;
-$secondary-heading-marginBottom: 1em;
 $secondary-heading-fontStyle:normal;
 $secondary-heading-fontWeight:400;
+$secondary-heading-lineHeight: 1.25em;
+$secondary-heading-marginBottom: 1em;
 $secondary-heading-text-transform:uppercase;
 
 //Sub Heading 
+$sub-heading-color:$brandPallete2 ;
 $sub-heading-font: $brand-font-1; 
 $sub-heading-size: 1.5em;
-$sub-heading-color:$brandPallete2 ;
-$sub-heading-lineHeight: 1.25;
-$sub-heading-marginBottom:0 ;
 $sub-heading-fontStyle:italic;
 $sub-heading-fontWeight:600;
+$sub-heading-lineHeight: 1.25;
+$sub-heading-marginBottom:0 ;
 $sub-heading-text-transform:none;
 
 //Paragraph
+$body-color:default ;
 $body-font:$brand-font-1 ; 
 $body-size: 1.25em;
-$body-color:default ;
-$body-lineHeight: 1.5;
-$body-marginBottom:2em ;
 $body-fontStyle:normal;
 $body-fontWeight:400;
+$body-lineHeight: 1.5;
+$body-marginBottom:2em ;
 $body-text-transform:none;
-
-
 
 //Buttons
 $btn-color:$brandPallete4;

@@ -2,40 +2,41 @@
 @import 'settings';
 
 @mixin main-heading{
+  color: $primary-heading-color;
   font-family: $primary-heading-font;
   font-size: $primary-heading-size;
-  color: $primary-heading-color;
+  font-style: $primary-heading-fontStyle;
   line-height: $primary-heading-lineHeight;
   margin-bottom: $primary-heading-marginBottom;
-  font-style: $primary-heading-fontStyle;
+  
 }
 
 @mixin secondary-heading{
-  font-family: $secondary-heading-font;
-  font-size: $secondary-heading-size;
   color: $secondary-heading-color;
+  font-family: $secondary-heading-font;
+  font-style: $secondary-heading-fontStyle;
+  font-size: $secondary-heading-size;
   line-height:$secondary-heading-lineHeight ;
   margin-bottom:$secondary-heading-marginBottom;
-  font-style: $secondary-heading-fontStyle;
 }
 
 @mixin sub-heading{
+  color: $sub-heading-color;
   font-family: $sub-heading-font;
   font-size: $sub-heading-size;
-  color: $sub-heading-color;
+  font-style: $sub-heading-fontStyle;
+  font-weight: $sub-heading-fontWeight;
   line-height: $sub-heading-lineHeight;
   margin-bottom: $sub-heading-marginBottom ;
-  font-weight: $sub-heading-fontWeight;
-  font-style: $sub-heading-fontStyle;
 }
 @mixin body-font{
+  color: $body-color;
   font-family: $body-font;
   font-size: $body-size;
-  color: $body-color;
-  line-height: $body-lineHeight;
-  margin-bottom: $body-marginBottom ;
-  font-weight: $body-fontWeight;
   font-style: $body-fontStyle;
+  font-weight: $body-fontWeight;
+  line-height: $body-lineHeight;
+  margin-bottom: $body-marginBottom ; 
 }
 
 @mixin section-color($brand-color){
@@ -44,8 +45,8 @@
 
 @mixin btn{
   display: inline-block;
-  vertical-align:bottom;
   text-align:center;
+  vertical-align:bottom;
   zoom:1;
 }
 
@@ -56,16 +57,16 @@
   border-radius: $btn-radius;
   color:$btn-txt-color;
   font-family:$btn-font;
-  text-transform: $btn-text-transform;
   padding:$btn-padding;
+  text-transform: $btn-text-transform;
 }
 
 @mixin btn-large{
   @include btn;
   @include btn-styles;
+  padding: $btn-padding-large;
   height: $btn-height-large;
   width: $btn-width-large;
-  padding: $btn-padding-large;
 }
 
 @mixin btn-medium{
@@ -85,14 +86,14 @@
 @mixin input{
   -webkit-appearance: none;
   background-color:$input-color;
-  color:$input-txt-color;
-  border-radius: $input-radius;
   border: $input-border;
+  border-radius: $input-radius;
+  color:$input-txt-color;
   font-family:$input-font;
   padding:$input-padding;
-  text-transform: $input-text-transform;
   width: $input-width;
   height:$input-height;
+  text-transform: $input-text-transform;
 }
 
 @mixin input-focus{
@@ -103,6 +104,5 @@
   border: $input-focus-border;
   font-family:$input-focus-font;
   padding:$input-focus-padding;
-  text-transform: $input-focus-text-transform;
 }
 

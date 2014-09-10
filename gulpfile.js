@@ -50,6 +50,13 @@ gulp.task('images', function() {
     .pipe(gulp.dest('app/images'))
     .pipe(reload({stream:true}));
 });
+
+// HTML
+gulp.task('html', function() {
+  return gulp.src('src/index.html')
+    .pipe(gulp.dest('app'))
+    .pipe(reload({stream:true}));
+});
  
 // Clean
 gulp.task('clean', function(cb) {
@@ -67,7 +74,9 @@ gulp.task('watch', function() {
  
   // Watch image files
   gulp.watch('src/images/**/*', ['images']);
- 
+
+  // Watch index.html
+  gulp.watch('src/index.html', ['html']);
   // Watch any files in app/, reload on change
   gulp.watch(['app/**']).on('change', browserSync.reload);
  
