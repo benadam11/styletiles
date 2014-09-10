@@ -9,13 +9,17 @@
 
 .container {
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 70em;
   width: 90%;
 }
+
+//Elements
+
 img{
   height:100%;
   width:auto;
 }
+
 h1 { @include main-heading; }
 h2{ @include secondary-heading; }
 p { @include body-font; }
@@ -28,26 +32,30 @@ header{padding:3em;}
   background: $brandPallete6;
   padding:3em 2em 4em;
 }
+
 .styles,{ 
   padding:4em 2em 4em;
 }
+
 .patterns{ 
   background: $brandPallete1;
   min-height: 12em;
 }
+
 .section-header{
   background-color: $brandPallete7;
   padding:1.25em .5em .0125em;
 }
+
 .components{
   background-color: $brandPallete6;
   padding:3em 2em 3em;
 }
 
-
 //Components
 
-//Color Pallete 
+/*Color Pallete */
+
 .brand-color{
   display: inline-block;
   width:18%;
@@ -55,15 +63,18 @@ header{padding:3em;}
   margin-right:.5%;
   margin-bottom: 2em;
 }
+
 .brand-color:last-child{
   margin-right: none;
 }
+
 .brand-color-1{background:$brandPallete1}
 .brand-color-2{background:$brandPallete2}
 .brand-color-3{background:$brandPallete3}
 .brand-color-4{background:$brandPallete4}
 .brand-color-5{background:$brandPallete5}
 
+/*Buttons*/
 .btn-lg{ 
   @include btn-large;
   &:hover{
@@ -77,19 +88,22 @@ header{padding:3em;}
     background-color: $btn-hover-color;
   }
 }
+
 .btn-sm{ 
   @include btn-small;
   &:hover{
     background-color: $btn-hover-color;
   }
 }
-form{
-  margin-bottom: 1em;
-}
+
+/*Form*/
+form{ margin-bottom: 1em;}
+
 label{
   display:block;
   @include secondary-heading;
 }
+
 input[type=text]{
   @include input;
   margin-bottom:1em;

@@ -77,6 +77,7 @@ gulp.task('watch', function() {
 
   // Watch index.html
   gulp.watch('src/index.html', ['html']);
+
   // Watch any files in app/, reload on change
   gulp.watch(['app/**']).on('change', browserSync.reload);
  
@@ -84,7 +85,6 @@ gulp.task('watch', function() {
 
 // Default task
 gulp.task('default', ['clean', 'browser-sync'], function() {
-    gulp.start('styles', 'scripts', 'images','watch');
-    
+    gulp.start('styles', 'scripts', 'images','html','watch');
 });
 

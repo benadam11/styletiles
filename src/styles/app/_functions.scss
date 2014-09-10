@@ -64,7 +64,6 @@
 @mixin btn-large{
   @include btn;
   @include btn-styles;
-  padding: $btn-padding-large;
   height: $btn-height-large;
   width: $btn-width-large;
 }

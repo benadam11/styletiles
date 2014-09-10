@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Focus Styles*/
 .container {
   margin: 0 auto;
-  max-width: 60rem;
+  max-width: 70em;
   width: 90%;
 }
 
@@ -295,6 +295,7 @@ header {
   padding: 3em 2em 3em;
 }
 
+/*Color Pallete */
 .brand-color {
   display: inline-block;
   width: 18%;
@@ -327,6 +328,7 @@ header {
   background: #EAB843;
 }
 
+/*Buttons*/
 .btn-lg {
   display: inline-block;
   text-align: center;
@@ -339,7 +341,6 @@ header {
   font-family: "proxima-nova", sans-serif;
   padding: 1em;
   text-transform: uppercase;
-  padding: 1em;
   height: auto;
   width: 300px;
 }
@@ -385,6 +386,7 @@ header {
   background-color: #2180BB;
 }
 
+/*Form*/
 form {
   margin-bottom: 1em;
 }
